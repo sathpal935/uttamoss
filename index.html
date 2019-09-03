@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uttam One Stop Shop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="./css/style.responsive.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					<img src="./images/logo.png" class="img-responsive">
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="https://www.facebook.com/uttamoss/" target="_black">Subscribe</a></li>
+						<!-- <li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li> -->
+
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+	</div>
+
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$(".menu-icon").on("click",function(){
+
+				$("nav ul").toggleClass("showing");
+
+			})
+
+		});
+
+		$(window).on("scroll", function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('black');
+			}
+			else{
+				$('nav').removeClass('black');
+			}
+		})
+
+	</script>
+
+
+</body>
+</html>
